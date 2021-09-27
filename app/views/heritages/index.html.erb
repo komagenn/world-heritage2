@@ -1,0 +1,9 @@
+<div class="contents row">
+  <% @heritages.each do |heritage| %>
+    <div class="content_post" style="background-image: url(<%= heritage.image %>);">
+      <p><%= heritage.text %></p>
+      <span class="name">
+        <%= heritage.name %>
+      </span>
+    </div>
+  <% end %>
